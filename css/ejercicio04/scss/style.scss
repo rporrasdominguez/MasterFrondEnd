@@ -1,0 +1,107 @@
+@import 'reset';
+@import 'colours';
+
+:root{
+    height: 100vh;
+}
+
+body{
+    height: 100%;;
+}
+
+aside{
+    background-color:$colourAside;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+
+        li{
+            text-transform: uppercase;
+            padding-right: .5em;
+        }
+    }
+}
+
+section{
+
+    height: 98%;
+
+    article{
+        height: 100%;
+
+        &:first-child{
+            background-color: $colourContentA;
+            height: 50%;
+        }
+        
+        &:last-child{
+            background-color: $colourContentB;
+            height: 50%;
+        }
+    }
+
+    
+}
+
+@media screen and(min-width:600px)
+{
+    aside{
+        height: 10%;
+        
+        ul{
+            justify-content: space-around;
+            height: 100%;
+            li{                
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+    }
+}
+
+@media screen and(min-width:800px)
+{
+    body{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display:grid;
+
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "aside contentA"
+                             "aside contentB";
+        
+        
+    }
+
+    aside{
+        grid-area: aside;
+        height: 100%;
+        ul{
+            flex-direction: column;
+            justify-content: around;
+        }
+        
+
+    }
+
+    section{
+        height: 100%;
+        article{
+
+            &:first-child{
+                height: 100%;;
+                grid-area: contentA; 
+            }
+
+            &:last-child{
+                height: 100%;
+                grid-area:contentB;
+            }
+        }
+    }
+}
+

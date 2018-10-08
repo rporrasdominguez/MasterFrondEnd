@@ -1,0 +1,108 @@
+@import 'reset';
+@import 'colours';
+:root{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul{
+    display:flex;
+    justify-content: space-between;
+    li{
+        text-transform: uppercase;
+    }
+}
+
+
+
+.nav-main{
+    background-color: $colourNavMain;
+    
+    ul{ 
+        
+        li{
+            margin:0 1em;
+        }           
+        li:nth-child(2){
+            display:none;
+            
+        }
+    }
+}
+
+.nav-secondary{
+    background-color: $colourNavSecondary;
+    width: 100%;
+    ul{
+       // width: 100%;
+        li{
+           // width: 14.2%;
+            background-color: white;
+            border:2px solid lightgray;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 45%;
+           
+          
+            
+            &:hover{
+                background-color: black;
+                color:white;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:350px)
+{
+    .nav-secondary{
+        ul{
+            li{
+                width: 14.2%;
+               
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px)
+{
+    main{
+        justify-content: flex-start;
+    }
+
+    .nav-main{
+        
+        ul{ 
+                     
+            li:nth-child(2){
+                display:block;
+                
+            }
+        }
+    }
+
+    .nav-secondary{
+        ul{
+            li{
+                width: 14.2;
+                font-size:50%;              
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,20 @@
+@import 'mixins';
+
+main{
+    
+    display:flex;
+
+    div{
+        height: 100px;
+        display:flex;
+        align-items: center;
+        color:white;
+        font-weight: bold;
+        border-right: 5px solid white;
+        padding:.5em;
+    }
+    
+}
+
+@include pickColor(orange);
+

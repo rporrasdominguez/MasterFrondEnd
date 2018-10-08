@@ -1,0 +1,63 @@
+@mixin tema01{
+    @include box;
+    @include text;
+
+    .base{
+        background-color: $colorBaseTema01;
+    }
+
+    .important{
+        background-color: $colorImportantTema01;
+    }
+
+    .warning{
+        background-color: $colorWarningTema01;
+    }
+
+    .principal{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .secudary{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .shadow{
+        color:black;
+        box-shadow: -15px 17px 5px 0px rgba(0,0,0,0.75);
+        margin-bottom: 3em;
+    }
+}
+
+@mixin tema02{
+    @include box;
+    @include text;
+
+    .base{
+        background-color: $colorBaseTema02;
+    }
+
+    .important{
+        background-color: $colorImportantTema02;
+    }
+
+    .warning{
+        background-color: $colorWarningTema02;
+    }
+
+    .principal{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .secudary{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .shadow{
+        color:black;
+        box-shadow: 15px 17px 5px 0px rgba(0,0,0,0.75);
+        margin-bottom: 3em;
+    }
+}
+
+

@@ -1,0 +1,14 @@
+@mixin pickColor($color)
+{  
+    $n:1;
+    
+    @for $i from 4 through -4 
+    {
+        div:nth-child(#{$n}){
+            background-color:$color - ($i * .5 *40);
+        }
+
+       $n: ($n + 1);
+    }  
+    
+}
