@@ -1,0 +1,53 @@
+@media only screen and (min-width:600px)
+{
+    footer{
+        .socialMedia{
+            text-align: center;
+
+            .firstColumn{
+                display:inline;
+                text-align: center;           
+            }
+            .secondColumn{
+                text-align: center;
+                display:inline;
+            }
+    
+            img{
+                @include sizeIcons(3em,3em);
+                margin-right: 1em;
+                margin-left: 1em;
+            }
+        }
+        
+        .options{
+            ul{
+                text-align: center;
+    
+                li{                  
+
+                    &:nth-child(1){
+                        border-top:none;
+                    }
+    
+                    &:nth-child(2){
+                        border-top:none;
+                    }
+
+
+                    width: auto;
+                    border-bottom:none;
+                    padding:.4em;                   
+                    border-right: 1px solid grey;
+                }
+    
+                
+            }
+            
+            
+        }
+
+    }
+      
+
+}

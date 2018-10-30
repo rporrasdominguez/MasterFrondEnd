@@ -1,0 +1,25 @@
+@media only screen and (min-width:900px){
+    #mostRecent{
+        display:grid;
+        grid-gap: 10px;
+        grid-template-columns:20em 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "recent1 recent2"
+                             "recent3 recent3";
+    
+       #mostRecentMenu{
+            grid-area: recent1;
+       }
+
+       #mostRencentBig{
+            grid-area: recent2;
+       }
+
+       #mostRencentBig2{
+            grid-area: recent3;
+        }
+        
+    }
+    
+}
+

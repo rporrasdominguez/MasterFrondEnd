@@ -1,0 +1,147 @@
+.generalModel{
+    @include sectionFormat;
+
+    h1{
+        @include h1Format;
+    }
+
+    article{
+        @include articleFormat;
+        display:flex;
+
+        img{
+            margin-top: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            
+            
+        }
+
+        p{
+            @include paragraphFormat;
+            font-size: .7em;
+
+            &:last-of-type{
+                @include thirdParagraph;
+            }
+        }
+
+        &:first-of-type{
+
+            display:block;
+
+            img:first-of-type{
+                width: 100%;
+                margin: 1em auto;
+            }
+
+            p:nth-of-type(1){
+                @include secondParagraph;
+                margin-top:.5em;
+                margin-bottom:.5em;
+            }          
+        }
+
+
+        .text{
+            @include textSide;
+            margin-top:1em;
+        }
+
+        &:last-of-type{
+            border-bottom:0;
+
+            img:last-of-type{
+                width: 50px;
+                height: 50px;
+            }
+
+            p{
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:900px)
+{
+    main{
+        width: 60em;
+        margin: 0 auto;
+
+        display:grid;
+        grid-gap: 10px;
+        // justify-content: center;
+        // align-items:center;
+
+        grid-template-areas: "topStories topStories  mostPopular"
+                             "latestVideos latestVideos latestVideos"
+                             "mostRecent mostRecent mostRecent"
+                             "business culture ideas"
+                             "gear science security"
+                             "transportation photo backChannel"
+                             ". newsletter followUs";
+
+        #topStories{
+           grid-area: topStories;
+        }
+
+        #mostPopular{
+            grid-area: mostPopular;
+        }
+
+        #latestVideos{
+            grid-area: latestVideos;
+        }
+
+        #mostRecent{
+            grid-area: mostRecent;
+        }
+
+        #business{
+            grid-area:business;
+        }
+
+        #gear{
+            grid-area: gear;
+        }
+
+        #transportation{
+            grid-area:transportation;
+        }
+
+        #culture{
+            grid-area: culture;
+        }
+
+        #science{
+            grid-area: science;
+        }
+
+        #photo{
+            grid-area: photo;
+        }
+        
+        #ideas{
+            grid-area: ideas; 
+        }
+
+        #security{
+            grid-area: security;
+        }
+
+        #backChannel{
+            grid-area: backChannel;
+        }
+
+        #newsletter{
+            grid-area: newsletter;
+        }
+
+        #followUs{
+            grid-area: followUs;
+        }
+    }
+
+
+}

@@ -1,0 +1,41 @@
+@media only screen and (min-width:900px)
+{
+    #topStories{
+        
+        #grid{
+
+            display:grid;
+            grid-gap:10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "news1 news1 news2" 
+                                 "news3 news4 news4"
+                                 "news5 news4 news4"
+                                 "news6 news6 news6";
+                              
+
+            article:nth-child(1){
+                grid-area: news1;                      
+            }
+           article:nth-child(2){
+                grid-area: news2;
+                
+            }
+            article:nth-child(3){
+                grid-area: news3;
+                
+            }
+            article:nth-child(4){
+                grid-area: news4;
+            }
+            article:nth-child(5){
+                grid-area: news5;
+            }
+            article:nth-child(6){
+               grid-area: news6;
+            }
+        }
+
+
+    }
+}
+
