@@ -1,0 +1,93 @@
+#container-nav{
+    display: none;
+}
+
+
+@media only screen and (min-width:900px)
+{
+    #container-nav{
+
+        display:flex;
+
+        div{
+            
+
+            padding-top:.5em;
+            padding-bottom:.5em;
+            width:14.28%;
+            border:1px solid grey;
+            text-align: center;
+            text-transform: uppercase;
+            color:grey;
+
+            &:nth-child(8){
+                display:none;
+            }
+            &:nth-child(9){
+                display:none;
+            }
+            &:nth-child(10){
+                display:none;
+            }
+
+            &:first-of-type:hover{
+                background-color:$bgBusiness;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(2):hover{
+                background-color:$bgCulture;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(3):hover{
+                background-color:$bgGear;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(4):hover{
+                background-color:$bgIdeas;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(5):hover{
+                background-color:$bgScience;
+                color:$colourFontHoverNav;
+                
+            }
+            &:nth-child(6):hover{
+                background-color: $bgSecurity;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(7):hover{
+                background-color: $bgTransportation;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(8):hover{
+                background-color: $bgPhoto;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(9):hover{
+                background-color: $bgVideo;
+                color:$colourFontHoverNav;
+            }
+            &:nth-child(10):hover{
+                background-color: $bgBackChannel;
+                color:$colourFontHoverNav;
+            }
+        }
+       
+    }
+}
+
+@media only screen and (min-width:1800px){
+    #container-nav{
+        div{
+            &:nth-child(8){               
+                display:block;
+            }
+            &:nth-child(9){                
+                display:block;
+            }
+            &:nth-child(10){               
+                display:block;
+            }
+        }
+    }
+}

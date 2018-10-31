@@ -1,0 +1,28 @@
+#mostRecentMenu{
+    
+
+    h1{
+        @include h1Format;
+    }
+
+    article{
+        @include articleFormat;
+        display:flex;
+        padding-top:1em;
+        padding-bottom: 1em;
+
+
+        img{
+            margin-right: 1em;
+        }
+
+        .text{
+            @include textSide;
+        }
+
+        p{
+            @include paragraphFormat;
+            font-size: .7em;
+        }
+    }
+}

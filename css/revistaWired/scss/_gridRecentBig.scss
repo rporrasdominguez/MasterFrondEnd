@@ -1,0 +1,31 @@
+@media only screen and (min-width:900px){
+
+    #mostRecentBig{
+        
+        display:grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "recent1 recent2 recent2 recent2"
+                             "recent3 recent3 recent4 recent4";
+                             ;
+    
+        article:nth-child(1){
+            grid-area: recent1;                   
+        }                     
+    
+        article:nth-child(2){
+            grid-area: recent2;                   
+        }
+       article:nth-child(3){
+            grid-area: recent3;
+
+        }
+        article:nth-child(4){
+            grid-area: recent4;
+            
+        }
+
+    }
+}
+
+    

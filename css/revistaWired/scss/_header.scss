@@ -1,0 +1,70 @@
+header{
+    width: 100%;
+    left: 0;
+    top:0;
+    position:fixed;
+    background-color: white;
+    
+    #header-container{
+        display:flex;
+        @include borderBottomShadow(grey);
+
+        div{           
+            height: 2em;
+        }
+
+        #menu{
+
+            text-align: left;
+            padding:1%;
+
+            img{
+                width: 1.5em;
+            }
+        }
+
+        #logo{ 
+            width: 50%;
+            text-align: right;
+            img{       
+                width: 6em;
+                padding-top:10px;
+            }    
+        }
+
+
+        #subscribe{
+            width: 40%;
+            display:flex;
+            justify-content: right;
+            color:#12679b;
+            text-transform: uppercase;
+            padding-top: 10px;
+            font-size: .7em;
+            padding-right: 1em;
+
+            p:first-of-type{
+                color:grey;
+                display:none;   
+            }
+
+            p:last-of-type{
+                margin-left: 1em;
+            }
+        }
+
+        #search{
+            text-align: center;
+            img{
+                padding-right: 1em;
+                padding-top:.5em;
+                height: 1em;
+                width: 1em;
+            }
+
+            display:none;
+        }
+    }
+    
+}
+
