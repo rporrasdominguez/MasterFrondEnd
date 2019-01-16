@@ -6,16 +6,12 @@ const coches = ['renault','bmw','mercedes','audi'];
 const camiones =['pegaso','iveco','man','scania'];
 const motos = ['ducati','ktm','honda','yamaha'];
 
+
 const concat = (...args) =>{
 
     let array = [];
 
-    args.forEach(arg => {
-        arg.forEach(element => {
-            array.push(element)
-        })
-        
-    });
+    args.forEach( arg => array.push(...arg));
 
     return array;
 };
