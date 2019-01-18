@@ -81,19 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const numbers = [1,3,4,5,7];\n\nlet [firstPosition] = numbers;\n\nconsole.log(firstPosition);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var numbers = [1, 3, 4, 5, 7];\nvar firstPosition = numbers[0];\nconsole.log(firstPosition);\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!************************!*\
+  !*** multi ./index.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./index.js */\"./index.js\");\n\n\n//# sourceURL=webpack:///multi_./index.js?");
 
 /***/ })
 
