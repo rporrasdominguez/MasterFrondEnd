@@ -20,6 +20,19 @@ module.exports = {
 
     output:{filename:'./js/[name].bundle.js'}, //fichero de salida
 
+    optimization:{
+        splitChunks:{
+            cacheGroups:{
+               vendor:{ //introduce todas las librerias en vendor y no las duplique en los demas ficheros
+                   chunks:'initial',
+                   name:'vendor',
+                   test:'vendor',
+                   enforce:true,
+               } 
+            }
+        }
+    },
+
     module:{
         rules:[{
             test:/\.js$/,
