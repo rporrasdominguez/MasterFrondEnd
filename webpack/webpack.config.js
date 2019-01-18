@@ -4,7 +4,7 @@ var basePath = __dirname;
 module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
-    entry:['./index.js'],
+    entry:['@babel/polyfill','./index.js'],
 
     output:{filename:'bundle.js'},
 
