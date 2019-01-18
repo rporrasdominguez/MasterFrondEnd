@@ -4,7 +4,7 @@
   "description": "proyecto del modulo de webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "start": "nodemon --watch webpack.config.js --exec webpack-dev-server --mode development --open",
     "build": "rimraf dist && webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
