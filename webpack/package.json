@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/rporrasdominguez/MasterFrondEnd/issues"
   },
-  "homepage": "https://github.com/rporrasdominguez/MasterFrondEnd#readme"
+  "homepage": "https://github.com/rporrasdominguez/MasterFrondEnd#readme",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
 }
