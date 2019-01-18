@@ -18,7 +18,7 @@ module.exports = {
 
     },
 
-    output:{filename:'./js/[name].bundle.js'}, //fichero de salida
+    output:{filename:'./js/[name].[chunkhash].bundle.js'}, //fichero de salida
 
     optimization:{
         splitChunks:{
@@ -59,7 +59,7 @@ module.exports = {
         new HtmlWebpackPlugin({ //cargamos el plugin htmlwebpackplugin
             filename:'index.html', //fichero de destino que se colocara en ./dist
             template: 'index.html', //fichero de origen en ./
-            hash: true, //Con lo que forzaremos al navegador a refrescar con cada nuevo cambio de la pagina
+           
         }),
 
     ]
