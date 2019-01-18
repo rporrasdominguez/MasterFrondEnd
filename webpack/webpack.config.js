@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin'); //para poder transformar js en css
 
 var path = require('path');
 var basePath = __dirname;
@@ -44,8 +45,7 @@ module.exports = {
             exclude: /node_modules/, //no mires en la carpeta node_modules
             use:[ //al usar mas de un loader usaremos use y en su interior los distintos loader
                 {
-                    loader:'style-loader', //Nos coge los estilos del js bundle y no incrusta en la cabecera del html
-                  
+                    loader:MiniCssExtractPlugin.loader, //sustituye a style-loader 
                 },
                 {
                     loader: 'css-loader', //loader que maneje el css y lo introduce en el js
@@ -62,5 +62,10 @@ module.exports = {
            
         }),
 
+        new MiniCssExtractPlugin({ //plugin para crear ficheros css
+            filename:'./css/[name].css',
+            chunkFilename:'[id].css',
+        }),
+    
     ]
 }
