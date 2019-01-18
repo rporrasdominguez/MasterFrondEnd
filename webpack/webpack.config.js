@@ -64,6 +64,18 @@ module.exports = {
                     'sass-loader',//loader para que el css lo introduzca en el js  
             ] 
         },
+
+        {
+            test:/\.(png|jpg)$/,
+            exclude:/node_modules/,
+            use:{
+                loader: 'url-loader',
+                options:{
+                    limit:200,
+                    name: './img/[hash].[name].[ext]',
+                },
+            }
+        },
     ],
     },
 
