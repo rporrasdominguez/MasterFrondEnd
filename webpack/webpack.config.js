@@ -6,9 +6,19 @@ var basePath = __dirname;
 module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
-    entry:['@babel/polyfill','./index.js','./style.css'], //ficheros de entrada
+    entry:{
+        app:'./index.js', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
 
-    output:{filename:'bundle.js'}, //fichero de salida
+        appStyles:[
+            './style.css', //Carpeta donde se guardaran los css, siendo style el fichero principal
+        ],
+        vendor:[
+            '@babel/polyfill', //carga los @babel/polyfill
+        ],
+
+    },
+
+    output:{filename:'./js/[name].bundle.js'}, //fichero de salida
 
     module:{
         rules:[{
