@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const numbers = [1,3,4,5,7];\n\nlet firstPosition = ({first, ...spread}) => first;\n\nconsole.log(firstPosition);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const numbers = [1,3,4,5,7];\n\nlet [firstPosition] = numbers;\n\nconsole.log(firstPosition);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
