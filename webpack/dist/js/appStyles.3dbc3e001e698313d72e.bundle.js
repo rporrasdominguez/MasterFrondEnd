@@ -81,19 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
+/***/ "./style.scss":
+/*!********************!*\
+  !*** ./style.scss ***!
+  \********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("var numbers = [1, 3, 4, 5, 7];\nvar firstPosition = numbers[0];\nconsole.log(firstPosition);\n\n//# sourceURL=webpack:///./index.js?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./style.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!**************************!*\
+  !*** multi ./style.scss ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./style.scss */\"./style.scss\");\n\n\n//# sourceURL=webpack:///multi_./style.scss?");
 
 /***/ })
 

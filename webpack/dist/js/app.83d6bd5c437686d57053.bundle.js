@@ -81,30 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./style.css":
-/*!*******************!*\
-  !*** ./style.css ***!
-  \*******************/
+/***/ "./content/logo_1.png":
+/*!****************************!*\
+  !*** ./content/logo_1.png ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./style.css?");
+eval("module.exports = __webpack_require__.p + \"./img/911fdc0e463694e3161fa716801097d8.logo_1.png\";\n\n//# sourceURL=webpack:///./content/logo_1.png?");
 
 /***/ }),
 
-/***/ 0:
-/*!*************************!*\
-  !*** multi ./style.css ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./style.css */\"./style.css\");\n\n\n//# sourceURL=webpack:///multi_./style.css?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _content_logo_1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./content/logo_1.png */ \"./content/logo_1.png\");\n/* harmony import */ var _content_logo_1_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_content_logo_1_png__WEBPACK_IMPORTED_MODULE_0__);\n\nvar img = document.createElement('img');\nimg.src = _content_logo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;\ndocument.getElementById('imgContainer').appendChild(img);\nvar numbers = [1, 3, 4, 5, 7];\nvar firstPosition = numbers[0];\nconsole.log(firstPosition);\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 

@@ -7,6 +7,18 @@ body{
     padding:0;
 }
 
+header{
+    display: flex;
+    padding:1em;
+    justify-content:space-between;
+}
+
 .color_letter_h1{
     color:$colorLetterWebPack;
+}
+
+
+
+#logo{
+    width: 100px;
 }
