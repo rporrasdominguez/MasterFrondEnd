@@ -1,0 +1,12 @@
+$colorBackgroundWebPack: #2b3a42;
+$colorLetterWebPack:#5299c7;
+
+body{
+    background-color: $colorBackgroundWebPack;
+    margin:0;
+    padding:0;
+}
+
+.color_letter_h1{
+    color:$colorLetterWebPack;
+}
