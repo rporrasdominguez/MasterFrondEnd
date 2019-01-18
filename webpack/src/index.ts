@@ -1,4 +1,6 @@
-import logo from './content/logo_1.png';
+//import logo from './content/logo_1.png';
+
+var logo = require('./content/logo_1.png');
 
 
 const img = document.createElement('img');
