@@ -8,7 +8,7 @@ module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
     entry:{
-        app:'./index.js', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
+        app:'./index.ts', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
 
         appStyles:[
             './style.scss', //Carpeta donde se guardaran los css, siendo style el fichero principal
