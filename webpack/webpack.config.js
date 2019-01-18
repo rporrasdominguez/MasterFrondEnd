@@ -7,6 +7,10 @@ var basePath = __dirname;
 module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
+    resolve:{
+        extensions:['.js','.ts'], //Extensiones a buscar
+    },
+
     entry:{
         app:'./index.ts', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
 
@@ -76,6 +80,18 @@ module.exports = {
                 },
             }
         },
+
+        {
+            test:/\.(ts|tsx)$/, //ts typescript, tsx react
+            exclude:/node_modules/,
+            loader: "awesome-typescript-loader", //transpila de ts a ES6
+           
+            options:{
+                userBabel:true, //de es6 a es5 transpila babel
+                "babelCore":"@babel/core", //necesario para Babel 7
+            }    
+        },
+    
     ],
     },
 
