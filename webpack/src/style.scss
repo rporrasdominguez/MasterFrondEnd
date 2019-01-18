@@ -1,5 +1,7 @@
 $colorBackgroundWebPack: #2b3a42;
 $colorLetterWebPack:#5299c7;
+$sizeFontParagraph:30px;
+$colorFontParagraph:white;
 
 body{
     background-color: $colorBackgroundWebPack;
@@ -11,14 +13,21 @@ header{
     display: flex;
     padding:1em;
     justify-content:space-between;
+    background-color: black;
 }
 
-.color_letter_h1{
+.style_h1{
     color:$colorLetterWebPack;
 }
 
 
-
 #logo{
     width: 100px;
+}
+
+.style_paragraph{
+    font-size: $sizeFontParagraph;
+    color:$colorFontParagraph;
+    margin-left: 1em;
+
 }
