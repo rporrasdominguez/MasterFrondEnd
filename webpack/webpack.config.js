@@ -8,13 +8,13 @@ module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
     resolve:{
-        extensions:['.js','.ts','jsx'], //Extensiones a buscar
+        extensions:['.js','.ts','.jsx','.tsx'], //Extensiones a buscar
     },
 
     devtool:'inline-source-map', //para depurar en linea
 
     entry:{
-        app:'./index.jsx', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
+        app:'./index.tsx', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
 
         appStyles:[
             './style.scss', //Carpeta donde se guardaran los css, siendo style el fichero principal
@@ -44,6 +44,11 @@ module.exports = {
 
     module:{
         rules:[{
+            test:/\.js$/,
+            exclude:/node_modules/,
+            loader:'babel-loader', //loader de babel
+        },
+        {
             test:/\.jsx$/,
             exclude:/node_modules/,
             loader:'babel-loader', //loader de babel
