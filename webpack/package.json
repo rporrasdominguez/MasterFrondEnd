@@ -4,7 +4,7 @@
   "description": "proyecto del modulo de webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config ndev.webpack.config.js",
+    "start": "webpack-dev-server --open --config dev.webpack.config.js",
     "build:dev": "rimraf dist && webpack --config dev.webpack.config.js",
     "build:prod": "rimraf dist && webpack -p --config prod.webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
