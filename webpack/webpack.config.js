@@ -8,7 +8,7 @@ module.exports = {
     context: path.join(basePath,'src'), //añade a la ruta base la carpeta src
 
     resolve:{
-        extensions:['.js','.ts'], //Extensiones a buscar
+        extensions:['.js','.ts','jsx'], //Extensiones a buscar
     },
 
     devtool:'inline-source-map', //para depurar en linea
