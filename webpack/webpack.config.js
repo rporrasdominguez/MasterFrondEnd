@@ -21,6 +21,8 @@ module.exports = {
         ],
         vendor:[
             '@babel/polyfill', //carga los @babel/polyfill
+            'react',
+            'react-dom',
         ],
 
     },
