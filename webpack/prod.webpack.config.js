@@ -1,6 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./base.webpack.config.js');
 const CompressionPlugin = require('compression-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
     mode: 'production',
@@ -13,5 +14,13 @@ module.exports = merge(common, {
             minRatio: 0.8,
             deleteOriginalAssets:true,
         }),
+
+       
+        new BundleAnalyzerPlugin({
+            analyzerMode: "static",
+            openAnalyzer: false,
+            reportFilename: "report/report.html",
+        }),
+        
     ],
 });
