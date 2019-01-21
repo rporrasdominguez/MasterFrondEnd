@@ -14,7 +14,7 @@ module.exports = {
     devtool:'inline-source-map', //para depurar en linea
 
     entry:{
-        app:'./index.ts', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
+        app:'./index.jsx', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
 
         appStyles:[
             './style.scss', //Carpeta donde se guardaran los css, siendo style el fichero principal
@@ -44,7 +44,7 @@ module.exports = {
 
     module:{
         rules:[{
-            test:/\.js$/,
+            test:/\.jsx$/,
             exclude:/node_modules/,
             loader:'babel-loader', //loader de babel
         },
