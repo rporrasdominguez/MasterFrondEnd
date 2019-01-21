@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin'); //para poder transformar js en css
+var webpack = require('webpack');
 
 var path = require('path');
 var basePath = __dirname;
