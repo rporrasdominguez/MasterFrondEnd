@@ -1,4 +1,7 @@
 //import logo from './content/logo_1.png';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {HelloWorld} from './hello.jsx';
 
 var logo = require('./content/logo_1.png');
 
@@ -19,4 +22,9 @@ const sentence :String = 'Esto es una frase chorra';
 
 console.log(sentence);
 
+ReactDOM.render(
+    <div>
+        <HelloWorld/>
+    </div>
+);
 
