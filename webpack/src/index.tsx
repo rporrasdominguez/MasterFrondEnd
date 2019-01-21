@@ -14,14 +14,17 @@ document.getElementById('imageContainer').appendChild(img);
 
 const numbers = [1,3,4,5,7];
 
-let [firstPosition]  = numbers;
+let [firstPosition] = numbers;
 
 console.log(firstPosition);
 
-const sentence = 'Esto es una frase chorra';
+const sentence :String= 'Esto es una frase chorra';
 
 console.log(sentence);
 
+/**
+ * Contenido REACT
+ */
 
 ReactDOM.render(
    
@@ -30,4 +33,9 @@ ReactDOM.render(
 
     document.getElementById('app')
 );
+
+/**
+ * Comprobacion modo desarrollo
+ */
+console.log(`We are in: ${process.env.NODE_ENV}`);
 
