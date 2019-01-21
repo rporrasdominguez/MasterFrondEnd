@@ -12,7 +12,7 @@ module.exports = {
         extensions:['.js','.ts','.jsx','.tsx'], //Extensiones a buscar
     },
 
-    devtool:'inline-source-map', //para depurar en linea
+    //devtool:'inline-source-map', //para depurar en linea
 
     entry:{
         app:'./index.tsx', //Carpeta donde se guardaran los js, siendo index.js el fichero principal
