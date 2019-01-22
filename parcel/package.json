@@ -4,8 +4,8 @@
   "description": "Proyecto parcel para el master front-end de LemonCode",
   "main": "index.js",
   "scripts": {
-    "build":"parcel ./src/index.html",
-    "build:prod":"parcel build ./src/index.html",
+    "build": "parcel ./src/index.html",
+    "build:prod": "parcel build ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,6 +15,7 @@
   "author": "Rafael Porras",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.11.0",
+    "rimraf": "^2.6.3"
   }
 }
