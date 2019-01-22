@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #21374b;
+}
+body header {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+body header .image {
+  width: 200px;
+}
+body section {
+  margin: 2em;
+}
+body section p {
+  font-weight: bold;
+  color: white;
+}
