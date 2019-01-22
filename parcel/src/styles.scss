@@ -1,11 +1,21 @@
 $bakground:#21374b;
+$fontColor: white;
 
 body{
     margin:0;
     padding:0;
     background-color:$bakground;
+
+    header{
+        display:flex;
+        justify-content: space-around;
+        color:$fontColor;
+
+        .image{
+            width: 200px;
+        }
+        
+    }
+
 }
 
-.header{
-    color:white;
-}
