@@ -11,3 +11,10 @@ body header {
 body header .image {
   width: 200px;
 }
+body section {
+  margin: 2em;
+}
+body section p {
+  font-weight: bold;
+  color: white;
+}

@@ -17,5 +17,13 @@ body{
         
     }
 
+    section{
+        margin:2em;
+        
+        p{
+            font-weight: bold;
+            color:$fontColor;
+        }
+    }
 }
 
