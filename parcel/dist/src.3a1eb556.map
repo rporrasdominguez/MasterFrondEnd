@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI","file":"src.3a1eb556.map","sourceRoot":"../src","sourcesContent":["console.log('Hello from Parcel');"]}
