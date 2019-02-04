@@ -1,9 +1,10 @@
 import {actionsEnums} from '../common/actionsEnums';
 import {MemberEntity} from '../model/member';
 
+
 export type memberState = {
-  members: MemberEntity[];
-  company:string;
+  members: MemberEntity[],
+  company:string,
 }
 
 interface BaseAction{
@@ -16,7 +17,7 @@ const createDefaultState = (): memberState =>({
   company: 'lemoncode',
 })
 
-export const memberReducer =  (state : memberState = createDefaultState(), action:BaseAction) => {
+export const memberReducer =  (state : memberState = createDefaultState(), action:BaseAction): memberState => {
   switch (action.type) {
     case actionsEnums.MEMBER_REQUEST_COMPLETED:
       return handleMemberRequestCompletedAction(state, action.payload);
@@ -27,6 +28,14 @@ export const memberReducer =  (state : memberState = createDefaultState(), actio
   return state;
 };
 
-const handleMemberRequestCompletedAction = (state : memberState, members) => {
-  return members;
-}
+const handleMemberRequestCompletedAction = (state : memberState, 
+                                            members: MemberEntity[]) => ({
+  ...state,
+  ...members,
+})
+
+const handleUpdateCompany = (state:memberState, 
+                             company:string) => ({
+  ...state,
+  company,
+})
