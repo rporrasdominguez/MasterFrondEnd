@@ -6,15 +6,15 @@ import { State } from '../../reducers';
 const mapStateToProps = (state  :State) => {
   return{
       members: state.memberReducer.members,
-      company:state.memberReducer.company
+      company: state.memberReducer.company,
      
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    loadMembers: (company: string) => dispatch(memberRequest(company)),
-    onChangeCompany: (company: string) => dispatch(updateCompany(company))
+    loadMembers: (company: string) => {return dispatch(memberRequest(company))},
+    onChangeCompany: (company: string) =>{return dispatch(updateCompany(company))}
   };
 }
 

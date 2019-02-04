@@ -5,7 +5,7 @@ import { memberAPI } from '../api/member';
 export const memberRequestCompleted = (members: MemberEntity[]) => {
   return {
     type: actionsEnums.MEMBER_REQUEST_COMPLETED,
-    payload: members
+    payload: members,
   }
 }
 
@@ -17,7 +17,7 @@ export const updateCompany = (company: string) => {
 }
 
 export const memberRequest = (company: string) => (dispatcher) => {
-  const promise = memberAPI.getAllMembers('lemoncode');
+  const promise = memberAPI.getAllMembers(company);
 
   promise.then(
     (data) => dispatcher(memberRequestCompleted(data))

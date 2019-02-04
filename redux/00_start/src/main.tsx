@@ -18,7 +18,7 @@ const store = createStore(reducers, /* preloadedState, */ composeEnhancers(
 ReactDOM.render(
   <Provider store={store}>
     <>      
-    <App/>
+      <App/>
     </>
   </Provider>,
   document.getElementById('root'));

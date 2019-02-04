@@ -15,9 +15,9 @@ interface BaseAction{
 const createDefaultState = (): memberState =>({
   members: [],
   company: 'lemoncode',
-})
+});
 
-export const memberReducer =  (state : memberState = createDefaultState(), action:BaseAction): memberState => {
+export const memberReducer =  (state : memberState = createDefaultState(),                                       action:BaseAction): memberState => {
   switch (action.type) {
     case actionsEnums.MEMBER_REQUEST_COMPLETED:
       return handleMemberRequestCompletedAction(state, action.payload);
@@ -28,10 +28,10 @@ export const memberReducer =  (state : memberState = createDefaultState(), actio
   return state;
 };
 
-const handleMemberRequestCompletedAction = (state : memberState, 
-                                            members: MemberEntity[]) => ({
+const handleMemberRequestCompletedAction = (state : memberState,
+                                            members:MemberEntity[]) => ({
   ...state,
-  ...members,
+  members,
 })
 
 const handleUpdateCompany = (state:memberState, 

@@ -13,9 +13,11 @@ export const MemberAreaComponent = (props : Props) => {
   return (
   <div>
       <input type='text'
-             onChange={(e) => props.onChangeCompany(e.target.value)}
              value={props.company}
+             onChange={(e) => props.onChangeCompany(e.target.value)}
+            
       />
+
       <input type="submit"
               value="load"
               className="btn btn-default"
