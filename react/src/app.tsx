@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MembersCardComponent } from './components';
+import {MemberListPage} from './page/memberListPage';
 
 
 interface Props {
@@ -14,9 +14,10 @@ export class App extends React.Component<Props> {
   public render() {
     return ( 
       <>
-       <MembersCardComponent/> 
+        <MemberListPage/>
       </>
     );
   }
 }
 
+{/* <MembersCardComponent/>  */}
