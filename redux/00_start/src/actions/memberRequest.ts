@@ -16,7 +16,7 @@ export const updateCompany = (company: string) => {
   }
 }
 
-export const memberRequest = () => (dispatcher) => {
+export const memberRequest = (company: string) => (dispatcher) => {
   const promise = memberAPI.getAllMembers('lemoncode');
 
   promise.then(
