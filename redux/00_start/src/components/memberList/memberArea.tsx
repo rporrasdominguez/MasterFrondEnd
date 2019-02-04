@@ -4,7 +4,9 @@ import {MemberEntity} from '../../model/member'
 
 interface Props {
   members: Array<MemberEntity>;
+  company: string,
   loadMembers: () => any;
+  onChangeCompany: () => void;
 }
 
 export const MemberAreaComponent = (props : Props) => {
