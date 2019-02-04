@@ -20,6 +20,8 @@ export const memberReducer =  (state : memberState = createDefaultState(), actio
   switch (action.type) {
     case actionsEnums.MEMBER_REQUEST_COMPLETED:
       return handleMemberRequestCompletedAction(state, action.payload);
+    case actionsEnums.UPDATE_COMPANY:
+      return handleUpdateCompany(state, action.payload);
   }
 
   return state;
