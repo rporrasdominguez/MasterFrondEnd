@@ -16,7 +16,7 @@ const createDefaultState = (): memberState =>({
   company: 'lemoncode',
 })
 
-export const memberReducer =  (state : memberState = [], action) => {
+export const memberReducer =  (state : memberState = createDefaultState(), action:BaseAction) => {
   switch (action.type) {
     case actionsEnums.MEMBER_REQUEST_COMPLETED:
       return handleMemberRequestCompletedAction(state, action.payload);
