@@ -9,6 +9,7 @@ export const memberRequestCompleted = (members: MemberEntity[]) => {
   }
 }
 
+
 export const memberRequest = () => (dispatcher) => {
   const promise = memberAPI.getAllMembers('lemoncode');
 

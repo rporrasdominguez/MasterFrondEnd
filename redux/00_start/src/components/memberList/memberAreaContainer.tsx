@@ -5,7 +5,8 @@ import { State } from '../../reducers';
 
 const mapStateToProps = (state  :State) => {
   return{
-      members: state.memberReducer
+      members: state.memberReducer,
+     
   };
 }
 
