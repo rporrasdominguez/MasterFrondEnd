@@ -10,13 +10,16 @@ interface Props {
 export const MemberAreaComponent = (props : Props) => {
   return (
   <div>
-      <MemberTableComponent members={props.members}/>
-      <br/>
+      <input type='text'
+      />
       <input type="submit"
               value="load"
               className="btn btn-default"
               onClick={() => props.loadMembers()}
       />
+      <MemberTableComponent members={props.members}/>
+   
+     
   </div>
   );
 }
