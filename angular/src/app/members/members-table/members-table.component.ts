@@ -20,7 +20,8 @@ export class MembersTableComponent implements OnInit{
   }
 
   ngOnInit(){
-     this.company='lemoncode';
+    this.members = [];
+    this.company='lemoncode';
   }
 
   onChange(e){
