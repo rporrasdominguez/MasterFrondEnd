@@ -10,6 +10,7 @@ import { MembersApiService } from '../members-api.service';
 })
 export class MembersTableComponent implements OnInit{
   members: MemberEntity[];
+  company: string;
 
   constructor(private membersApi: MembersApiService) { }
 
