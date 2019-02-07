@@ -15,7 +15,7 @@ export class MembersTableComponent implements OnInit{
   constructor(private membersApi: MembersApiService) { }
 
   loadMembers() {
-    this.membersApi.getAllMembers('lemoncode')
+    this.membersApi.getAllMembers(this.company)
       .subscribe((ms) => this.members = ms);
   }
 
