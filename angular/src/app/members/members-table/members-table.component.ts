@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { MemberEntity } from '../models/member.model';
 import { MembersApiService } from '../members-api.service';
@@ -8,7 +8,7 @@ import { MembersApiService } from '../members-api.service';
   templateUrl: './members-table.component.html',
   styles: []
 })
-export class MembersTableComponent {
+export class MembersTableComponent implements OnInit{
   members: MemberEntity[];
 
   constructor(private membersApi: MembersApiService) { }
@@ -16,6 +16,10 @@ export class MembersTableComponent {
   loadMembers() {
     this.membersApi.getAllMembers('lemoncode')
       .subscribe((ms) => this.members = ms);
+  }
+
+  ngOninit(){
+    
   }
 
 }
