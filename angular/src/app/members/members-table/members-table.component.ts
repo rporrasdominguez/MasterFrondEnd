@@ -19,8 +19,9 @@ export class MembersTableComponent implements OnInit{
       .subscribe((ms) => this.members = ms);
   }
 
-  ngOninit(){
-    
+  ngOnInit(){
+     this.members= [];
+     this.company='lemoncode';
   }
 
 }
