@@ -20,7 +20,6 @@ export class MembersTableComponent implements OnInit{
   }
 
   ngOnInit(){
-     this.members= [];
      this.company='lemoncode';
   }
 
