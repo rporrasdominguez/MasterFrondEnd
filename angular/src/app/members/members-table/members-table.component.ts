@@ -24,4 +24,8 @@ export class MembersTableComponent implements OnInit{
      this.company='lemoncode';
   }
 
+  onChange(e){
+    this.company = e.target.value;
+  }
+
 }
