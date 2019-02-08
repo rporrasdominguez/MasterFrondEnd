@@ -27,7 +27,8 @@ export default Vue.extend({
   name: "MemberTable",
   components: { MemberHead, MemberRow },
   data: () => ({
-    members: [] as Member[]
+    members: [] as Member[],
+    company: 'lemoncode',
   }),
   methods: {
     loadMembers: function() {
