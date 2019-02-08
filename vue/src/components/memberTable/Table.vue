@@ -1,5 +1,6 @@
 <template>
   <div>
+    <input type="text"/>
     <h2>Member Page</h2>
     <button @click="loadMembers">Load</button>
     <table :class="$style.table">
