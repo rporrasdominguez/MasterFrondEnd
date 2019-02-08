@@ -32,7 +32,7 @@ export default Vue.extend({
   }),
   methods: {
     loadMembers: function() {
-      getAllMembers("lemoncode").then(members => {
+      getAllMembers(this.company).then(members => {
         this.members = members;
       });
     }
