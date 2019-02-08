@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input type="text"/>
     <h2>Member Page</h2>
+    <input type="text" v-model="company"/>
     <button @click="loadMembers">Load</button>
     <table :class="$style.table">
       <thead>
