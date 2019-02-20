@@ -77,7 +77,10 @@
   },
 
     "jest":{
-      "preset": "ts-jest"
+      "preset": "ts-jest",
+      "setupFiles":[
+        "<rootDir>/config/test/polyfills.js"
+      ]
     }
   
 }
