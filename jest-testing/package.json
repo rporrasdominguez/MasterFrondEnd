@@ -9,7 +9,9 @@
     "start:prod": "env-cmd .env cross-env NODE_ENV=production webpack-dev-server --config ./config/webpack/app/prod.js",
     "build": "env-cmd .env if-env NODE_ENV=production && npm run build:prod || npm run build:dev",
     "build:dev": "rimraf dist && env-cmd .env cross-env NODE_ENV=development webpack --config ./config/webpack/app/dev.js",
-    "build:prod": "rimraf dist && env-cmd .env cross-env NODE_ENV=production webpack -p --config ./config/webpack/app/prod.js"
+    "build:prod": "rimraf dist && env-cmd .env cross-env NODE_ENV=production webpack -p --config ./config/webpack/app/prod.js",
+    "test": "jest --verbose",
+    "test:watch": "jest --verbose --watchAll -i"
   },
   "author": "Lemoncode",
   "license": "MIT",
@@ -72,5 +74,10 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
-  }
+  },
+
+    "jest":{
+      "preset": "ts-jest"
+    }
+  
 }
