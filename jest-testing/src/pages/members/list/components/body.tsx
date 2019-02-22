@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Body: React.StatelessComponent<Props> = (props) => (
-  <tbody>
+  <tbody className='list-items'>
     {
       props.members.map((member) => (
         <Row

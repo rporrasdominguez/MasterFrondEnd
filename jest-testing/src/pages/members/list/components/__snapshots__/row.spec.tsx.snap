@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/members/list/components/body specs should render as expected when passing required properties 1`] = `
+<tr
+  className="item"
+>
+  <td>
+    <img
+      src="url test"
+      style={
+        Object {
+          "maxWidth": "10rem",
+        }
+      }
+    />
+  </td>
+  <td>
+    <span>
+      1
+    </span>
+  </td>
+  <td>
+    <span>
+      name test
+    </span>
+  </td>
+</tr>
+`;

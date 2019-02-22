@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Row: React.StatelessComponent<Props> = (props) => (
-  <tr>
+  <tr className="item">
     <td>
       <img src={props.member.avatarUrl} style={{ maxWidth: '10rem' }} />
     </td>

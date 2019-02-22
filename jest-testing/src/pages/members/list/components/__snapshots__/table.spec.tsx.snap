@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/members/list/components/body specs should render as expected when passing more one item 1`] = `
+<Component
+  members={
+    Array [
+      Object {
+        "avatarUrl": "url test",
+        "id": 1,
+        "name": "name test",
+      },
+      Object {
+        "avatarUrl": "url test 2",
+        "id": 2,
+        "name": "name test 2",
+      },
+    ]
+  }
+  title="Test Header"
+>
+  <table
+    className="table table-striped"
+  >
+    <Component>
+      <thead>
+        <tr>
+          <th>
+            Avatar
+          </th>
+          <th>
+            Id
+          </th>
+          <th>
+            Name
+          </th>
+        </tr>
+      </thead>
+    </Component>
+    <Component
+      members={
+        Array [
+          Object {
+            "avatarUrl": "url test",
+            "id": 1,
+            "name": "name test",
+          },
+          Object {
+            "avatarUrl": "url test 2",
+            "id": 2,
+            "name": "name test 2",
+          },
+        ]
+      }
+    >
+      <tbody
+        className="list-items"
+      >
+        <Component
+          key="1"
+          member={
+            Object {
+              "avatarUrl": "url test",
+              "id": 1,
+              "name": "name test",
+            }
+          }
+        >
+          <tr
+            className="item"
+          >
+            <td>
+              <img
+                src="url test"
+                style={
+                  Object {
+                    "maxWidth": "10rem",
+                  }
+                }
+              />
+            </td>
+            <td>
+              <span>
+                1
+              </span>
+            </td>
+            <td>
+              <span>
+                name test
+              </span>
+            </td>
+          </tr>
+        </Component>
+        <Component
+          key="2"
+          member={
+            Object {
+              "avatarUrl": "url test 2",
+              "id": 2,
+              "name": "name test 2",
+            }
+          }
+        >
+          <tr
+            className="item"
+          >
+            <td>
+              <img
+                src="url test 2"
+                style={
+                  Object {
+                    "maxWidth": "10rem",
+                  }
+                }
+              />
+            </td>
+            <td>
+              <span>
+                2
+              </span>
+            </td>
+            <td>
+              <span>
+                name test 2
+              </span>
+            </td>
+          </tr>
+        </Component>
+      </tbody>
+    </Component>
+  </table>
+</Component>
+`;
+
+exports[`pages/members/list/components/body specs should render as expected when passing one item 1`] = `
+<Component
+  members={
+    Array [
+      Object {
+        "avatarUrl": "url test",
+        "id": 1,
+        "name": "name test",
+      },
+    ]
+  }
+  title="Test Header"
+>
+  <table
+    className="table table-striped"
+  >
+    <Component>
+      <thead>
+        <tr>
+          <th>
+            Avatar
+          </th>
+          <th>
+            Id
+          </th>
+          <th>
+            Name
+          </th>
+        </tr>
+      </thead>
+    </Component>
+    <Component
+      members={
+        Array [
+          Object {
+            "avatarUrl": "url test",
+            "id": 1,
+            "name": "name test",
+          },
+        ]
+      }
+    >
+      <tbody
+        className="list-items"
+      >
+        <Component
+          key="1"
+          member={
+            Object {
+              "avatarUrl": "url test",
+              "id": 1,
+              "name": "name test",
+            }
+          }
+        >
+          <tr
+            className="item"
+          >
+            <td>
+              <img
+                src="url test"
+                style={
+                  Object {
+                    "maxWidth": "10rem",
+                  }
+                }
+              />
+            </td>
+            <td>
+              <span>
+                1
+              </span>
+            </td>
+            <td>
+              <span>
+                name test
+              </span>
+            </td>
+          </tr>
+        </Component>
+      </tbody>
+    </Component>
+  </table>
+</Component>
+`;
