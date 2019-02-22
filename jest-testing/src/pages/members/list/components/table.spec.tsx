@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Table } from './table';
-import { shallow,mount } from 'enzyme';
-import { Header } from '../../../../common/components/panel/components';
+import { mount } from 'enzyme';
 
-describe('pages/members/list/components/body specs', () => {
+
+describe('pages/members/list/components/table specs', () => {
 
   it('should render as expected when passing one item', () => {
    

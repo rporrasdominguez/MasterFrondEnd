@@ -4,7 +4,7 @@ import { Row } from './row';
 
 
 
-describe('pages/members/list/components/body specs', () => {
+describe('pages/members/list/components/row specs', () => {
 
   it('should render as expected when passing required properties', () => {
     // Arrange

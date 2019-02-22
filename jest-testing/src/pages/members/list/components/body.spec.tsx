@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { Body } from './body';
-import { Row } from './row';
 
-import { shallow, mount } from 'enzyme';
-import { membersReducer } from '../reducers';
+import { mount } from 'enzyme';
+
 
 describe('pages/members/list/components/body specs', () => {
   it('should render as expected when passing one item', () => {

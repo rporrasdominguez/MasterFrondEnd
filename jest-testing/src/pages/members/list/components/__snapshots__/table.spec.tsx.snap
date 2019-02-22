@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/members/list/components/body specs should render as expected when passing more one item 1`] = `
+exports[`pages/members/list/components/table specs should render as expected when passing more one item 1`] = `
 <Component
   members={
     Array [
@@ -131,7 +131,7 @@ exports[`pages/members/list/components/body specs should render as expected when
 </Component>
 `;
 
-exports[`pages/members/list/components/body specs should render as expected when passing one item 1`] = `
+exports[`pages/members/list/components/table specs should render as expected when passing one item 1`] = `
 <Component
   members={
     Array [

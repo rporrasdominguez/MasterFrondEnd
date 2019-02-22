@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/members/list/components/body specs should render as expected when passing required properties 1`] = `
+exports[`pages/members/list/components/row specs should render as expected when passing required properties 1`] = `
 <tr
   className="item"
 >

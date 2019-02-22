@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/members/list/components/body specs should render as expected  1`] = `
+exports[`pages/members/list/components/header specs should render as expected  1`] = `
 <thead>
   <tr>
     <th>

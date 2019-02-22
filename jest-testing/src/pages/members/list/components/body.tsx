@@ -10,10 +10,7 @@ export const Body: React.StatelessComponent<Props> = (props) => (
   <tbody className='list-items'>
     {
       props.members.map((member) => (
-        <Row
-          key={member.id}
-          member={member}
-        />
+        <Row key={member.id} member={member}/>
       ))
     }
   </tbody>
