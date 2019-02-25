@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Body } from './body';
 
-import { mount } from 'enzyme';
+import { mount,shallow } from 'enzyme';
 
 
 describe('pages/members/list/components/body specs', () => {
@@ -18,7 +18,8 @@ describe('pages/members/list/components/body specs', () => {
         ]    
     }
     // Act
-    const component = mount(<Body {...props}/>);
+    //const component = mount(<Body {...props}/>);
+    const component = shallow(<Body {...props}/>);
  
     
 
@@ -45,7 +46,8 @@ describe('pages/members/list/components/body specs', () => {
     };
 
     // Act
-    const component = mount(<Body {...props}/>);
+    //const component = mount(<Body {...props}/>);
+    const component = shallow(<Body {...props}/>);
 
 
     // Assert
