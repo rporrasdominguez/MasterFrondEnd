@@ -3,5 +3,5 @@ import {MembersCardComponent} from '../components/membersCard/membersCardCompone
 
 export const MemberListPage = () => 
     <>
-        
+      <MembersCardComponent /> 
     </>
