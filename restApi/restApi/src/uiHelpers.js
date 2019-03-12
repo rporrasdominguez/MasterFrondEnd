@@ -15,9 +15,9 @@ const addCarRow = (car, tableId) => {
     })
 }
 
-export const addCarRows = (cars, tableId) => {
+export const addCarRows = (cars, tableId) => 
     cars.forEach((c) => addCarRow(c, tableId));
-}
+
 
 export const cleanTable = (tableId) => {
     const table = document
